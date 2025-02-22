@@ -1,0 +1,56 @@
+<form>
+    <h1 class="text-2x1 font-bold">Formulario</h1>
+    <div class="flex flex-col my-2">
+            <label class="col-form-label">No. Control</label>
+            <input type="text" class="form-control" v-model="noControl">
+        </div>
+        <div class="flex flex-col my-2">
+            <label class="col-form-label">Nombre Completo</label>
+            <input type="text" class="form-control" v-model="nombreComp">
+        </div>
+        <div class="flex flex-col my-2">
+            <label class="col-form-label">Edad</label>
+            <input type="number" class="form-control" v-model="edad">
+        </div>
+        <div class="flex flex-col my-2">
+            <label class="col-form-label">Semestre</label>
+            <input type="number" class="form-control" v-model="semestre">
+        </div>
+        <div class="flex flex-col my-2">
+            <label class="col-form-label">Carrera</label>
+            <select v-model="carrera" class="form-select" >
+                <option selected>Seleciona...</option>
+                <option value="ISC">ISC</option>
+                <option value="IM">IM</option>
+                <option value="IIA">IIA</option>
+                <option value="CP">CP</option>
+                <option value="LA">LA</option>
+            </select>
+        </div>
+        <div class="flex flex-col my-2 terms">
+            <h4>Especialidades</h4>
+            <input value="Ingeniería de Datos" class="form-check-input" type="radio" v-model="especialidad">
+            <label class="form-check-label"> Ingeniería de Datos </label>
+            <br>
+            <input value="Redes" class="form-check-input" type="radio" v-model="especialidad">
+            <label class="form-check-label"> Redes </label>
+            <br>
+            <input value="Devops" class="form-check-input" type="radio" v-model="especialidad">
+            <label class="form-check-label"> Devops </label>
+        </div>
+        <div class="flex flex-col my-2 terms">
+            <h4>Actividades Extraescolares</h4>
+            <input value="Deportes" class="form-check-input" type="radio" v-model="actExtra">
+            <label class="form-check-label"> Deportes </label>
+            <br>
+            <input value="Banda de Guerra" class="form-check-input" type="radio" v-model="actExtra">
+            <label class="form-check-label"> Banda de Guerra </label>
+            <br>
+            <input value="Danza" class="form-check-input" type="radio" v-model="actExtra">
+            <label class="form-check-label"> Danza </label>
+        </div>
+        <button class="mt-4 border bg-primary bg-gradient inline px-3 py-1 rounded text-white"
+        type="submit">
+            Agregar
+        </button>
+</form>
